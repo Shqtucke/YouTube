@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC22B1AE205576F500458C76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC22B1AD205576F500458C76 /* AppDelegate.swift */; };
-		DC22B1B0205576F500458C76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC22B1AF205576F500458C76 /* ViewController.swift */; };
+		DC22B1B0205576F500458C76 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC22B1AF205576F500458C76 /* HomeController.swift */; };
 		DC22B1B3205576F500458C76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC22B1B1205576F500458C76 /* Main.storyboard */; };
 		DC22B1B5205576F500458C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC22B1B4205576F500458C76 /* Assets.xcassets */; };
 		DC22B1B8205576F500458C76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC22B1B6205576F500458C76 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		DC22B1AA205576F500458C76 /* YouTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC22B1AD205576F500458C76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC22B1AF205576F500458C76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC22B1AF205576F500458C76 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		DC22B1B2205576F500458C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC22B1B4205576F500458C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC22B1B7205576F500458C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				DC22B1AD205576F500458C76 /* AppDelegate.swift */,
-				DC22B1AF205576F500458C76 /* ViewController.swift */,
+				DC22B1AF205576F500458C76 /* HomeController.swift */,
 				DC22B1B1205576F500458C76 /* Main.storyboard */,
 				DC22B1B4205576F500458C76 /* Assets.xcassets */,
 				DC22B1B6205576F500458C76 /* LaunchScreen.storyboard */,
@@ -136,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC22B1B0205576F500458C76 /* ViewController.swift in Sources */,
+				DC22B1B0205576F500458C76 /* HomeController.swift in Sources */,
 				DC22B1AE205576F500458C76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
