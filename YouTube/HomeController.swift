@@ -10,17 +10,12 @@ import UIKit
 
 class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.title = "Home"
-        
         collectionView?.backgroundColor = UIColor.white
-        
         collectionView?.register(VideoCell.self, forCellWithReuseIdentifier: "cellId")
-        
         
     }
 
@@ -37,7 +32,8 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 200)
+        let height = (view.frame.width - 16 - 16) * 9 / 16
+        return CGSize(width: view.frame.width, height: height + 16 + 68)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -55,13 +51,17 @@ class VideoCell: UICollectionViewCell {
     
     let thumbnailImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = UIColor.blue
+        imageView.image = UIImage(named: "futucke4")
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         return imageView
     }()
     
     let userProfileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = UIColor.green
+        imageView.image = UIImage(named: "Me2")
+        imageView.layer.cornerRadius = 22
+        imageView.layer.masksToBounds = true
         return imageView
     }()
     
@@ -73,15 +73,17 @@ class VideoCell: UICollectionViewCell {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = UIColor.purple
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "CEO Mr. Shawn & Uncle Adam"
         return label
     }()
     
     let subtitleTextView: UITextView = {
         let textView = UITextView()
-        textView.backgroundColor = UIColor.red
         textView.translatesAutoresizingMaskIntoConstraints = false
+        textView.text = "CEO Shawn Tucker • Investor Adam12 • 1 Billion Net Worth "
+        textView.textContainerInset = UIEdgeInsets(top: 0, left: -4, bottom: 0, right: 0)
+        textView.textColor = UIColor.lightGray
         return textView
     }()
     
@@ -93,7 +95,6 @@ class VideoCell: UICollectionViewCell {
         addSubview(subtitleTextView)
         
         addConstraintsWithFormat(format: "H:|-16-[v0]-16-|", views: thumbnailImageView)
-        
         addConstraintsWithFormat(format: "H:|-16-[v0(44)]", views: userProfileImageView)
         
         //Vertical restraints
@@ -111,16 +112,13 @@ class VideoCell: UICollectionViewCell {
         addConstraint(NSLayoutConstraint(item: titleLabel, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: 0, constant: 20))
         
         //top constraints
-        addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .top, relatedBy: .equal, toItem: titleLabel, attribute: .bottom, multiplier: 1, constant: 8))
+        addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .top, relatedBy: .equal, toItem: titleLabel, attribute: .bottom, multiplier: 1, constant: 4))
         //left constraints
         addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .left, relatedBy: .equal, toItem: userProfileImageView, attribute: .right, multiplier: 1, constant: 8))
         //right constraints
         addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .right, relatedBy: .equal, toItem: thumbnailImageView, attribute: .right, multiplier: 1, constant: 0))
         //height constraints
-        addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: 0, constant: 20))
-        
-        
-        
+        addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: 0, constant: 30))
         
         thumbnailImageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
     }
