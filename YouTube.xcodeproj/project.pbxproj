@@ -13,6 +13,7 @@
 		DC22B1B5205576F500458C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC22B1B4205576F500458C76 /* Assets.xcassets */; };
 		DC22B1B8205576F500458C76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC22B1B6205576F500458C76 /* LaunchScreen.storyboard */; };
 		DC3BA417205752800005F261 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3BA416205752800005F261 /* Extenstions.swift */; };
+		DC3BA41A205753BE0005F261 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3BA419205753BE0005F261 /* VideoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DC22B1B7205576F500458C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC22B1B9205576F500458C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC3BA416205752800005F261 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
+		DC3BA419205753BE0005F261 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,10 @@
 		DC22B1AC205576F500458C76 /* YouTube */ = {
 			isa = PBXGroup;
 			children = (
+				DC3BA41B205754250005F261 /* Controller */,
+				DC3BA4182057539E0005F261 /* View */,
 				DC3BA4152057524B0005F261 /* Helpers */,
 				DC22B1AD205576F500458C76 /* AppDelegate.swift */,
-				DC22B1AF205576F500458C76 /* HomeController.swift */,
 				DC22B1B1205576F500458C76 /* Main.storyboard */,
 				DC22B1B4205576F500458C76 /* Assets.xcassets */,
 				DC22B1B6205576F500458C76 /* LaunchScreen.storyboard */,
@@ -73,6 +76,22 @@
 				DC3BA416205752800005F261 /* Extenstions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DC3BA4182057539E0005F261 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC3BA419205753BE0005F261 /* VideoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC3BA41B205754250005F261 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC22B1AF205576F500458C76 /* HomeController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC22B1B0205576F500458C76 /* HomeController.swift in Sources */,
+				DC3BA41A205753BE0005F261 /* VideoCell.swift in Sources */,
 				DC3BA417205752800005F261 /* Extenstions.swift in Sources */,
 				DC22B1AE205576F500458C76 /* AppDelegate.swift in Sources */,
 			);
