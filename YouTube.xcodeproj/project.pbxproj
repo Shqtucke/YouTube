@@ -14,6 +14,7 @@
 		DC22B1B8205576F500458C76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC22B1B6205576F500458C76 /* LaunchScreen.storyboard */; };
 		DC3BA417205752800005F261 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3BA416205752800005F261 /* Extenstions.swift */; };
 		DC3BA41A205753BE0005F261 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3BA419205753BE0005F261 /* VideoCell.swift */; };
+		DC3BA41D20576A410005F261 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3BA41C20576A410005F261 /* MenuBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DC22B1B9205576F500458C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC3BA416205752800005F261 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
 		DC3BA419205753BE0005F261 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		DC3BA41C20576A410005F261 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				DC3BA419205753BE0005F261 /* VideoCell.swift */,
+				DC3BA41C20576A410005F261 /* MenuBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				DC3BA41A205753BE0005F261 /* VideoCell.swift in Sources */,
 				DC3BA417205752800005F261 /* Extenstions.swift in Sources */,
 				DC22B1AE205576F500458C76 /* AppDelegate.swift in Sources */,
+				DC3BA41D20576A410005F261 /* MenuBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
